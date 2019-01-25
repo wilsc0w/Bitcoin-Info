@@ -12,7 +12,7 @@ $kxk = @file_get_contents($api);
 if(preg_match("/tx_count/",$kxk)) {
 $plodexk = multiexplode(array(":",",","}",'"'),$kxk);
 	echo "\n ~ BitcoinInfo coded by {wilc0w} on github ~\n";
-	echo "\n Bitcoin Adress : $btcadress\n";
+	echo "\n Bitcoin Address : $btcadress\n";
 	echo " Transactions : $plodexk[28]\n";
 	echo " BTC's received : " . sprintf('%.8f', $plodexk[16]/100000000)."\n";
 	echo " BTC's sent : " . sprintf('%.8f', $plodexk[20]/100000000)."\n";
