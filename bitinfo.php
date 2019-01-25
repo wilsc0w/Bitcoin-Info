@@ -11,7 +11,7 @@ $api = "https://chain.api.btc.com/v3/address/$btcadress";
 $kxk = @file_get_contents($api);
 if(preg_match("/tx_count/",$kxk)) {
 $plodexk = multiexplode(array(":",",","}",'"'),$kxk);
-	echo "\n ~ BitcoinInfo coded by {wilc0w} on github ~\n";
+	echo "\n ~ BitcoinInfo coded by {wilsc0w} on github ~\n";
 	echo "\n Bitcoin Address : $btcadress\n";
 	echo " Transactions : $plodexk[28]\n";
 	echo " BTC's received : " . sprintf('%.8f', $plodexk[16]/100000000)."\n";
